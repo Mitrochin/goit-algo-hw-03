@@ -8,5 +8,9 @@ def get_days_from_today(date_str):
     except ValueError:
         return "Введена дата має неправильний формат. Будь ласка, введіть дату у форматі 'РРРР-ММ-ДД'."
 
-result = get_days_from_today("2021-10-09")
-print(result)
+while True:
+    user_input = input("Будь ласка, введіть дату у форматі 'РРРР-ММ-ДД' або введіть 'Exit' для виходу: ")
+    if user_input.lower() == 'Exit':
+        break
+    result = get_days_from_today(user_input)
+    print(f"Кількість днів від введеної дати до сьогодні: {result}")
