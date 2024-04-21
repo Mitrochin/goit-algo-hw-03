@@ -1,1 +1,1 @@
-# homework_03
+# goit-algo-hw-03
